@@ -8,64 +8,94 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
 
-  <nav class="topnav">
-    <a class="brand" href="index.html">
-      <svg viewBox="0 0 120 120"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"/><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><circle cx="60" cy="66" r="12" fill="#EB9293"/></svg>
-      SAI Lab
-    </a>
-    <div class="links">
-      <a href="index.html" class="active">Home</a>
-      <a href="research.html">Research</a>
-      <a href="members.html">Members</a>
-      <a href="news.html">News</a>
-      <a href="recruiting.html">Recruiting</a>
-    </div>
-  </nav>
+  <div class="navbar">
+    <nav class="topnav">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 120 120"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"/><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><circle cx="60" cy="66" r="12" fill="#EB9293"/></svg>
+        SAI Lab
+      </a>
+      <div class="links">
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="members.html">Members</a>
+        <a href="news.html">News</a>
+        <a href="recruiting.html">Recruiting</a>
+      </div>
+    </nav>
+  </div>
 
-  <section class="hero">
-    <p class="eyebrow" style="margin-top:20px">Wonkwang University · Sa-Yoon Park</p>
-    <div class="hero-head">
-      <svg viewBox="0 0 120 120"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"/><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><circle cx="60" cy="66" r="18" fill="#EB9293" fill-opacity="0.22"/><circle cx="60" cy="66" r="12" fill="#EB9293"/></svg>
-      <h1>SAI Lab<span class="en">사이(間) · Sa-Yoon AI · Signal Analysis &amp; Interpretation</span></h1>
+  <!-- HERO -->
+  <section class="band hero2">
+    <div class="inner">
+      <svg class="logo" viewBox="0 0 120 120"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"/><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><circle cx="60" cy="66" r="18" fill="#EB9293" fill-opacity="0.22"/><circle cx="60" cy="66" r="12" fill="#EB9293"/></svg>
+      <p class="eyebrow">Wonkwang University · Sa-Yoon Park</p>
+      <h1>SAI Lab</h1>
+      <p class="sub">사이(間) · Sa-Yoon AI · Signal Analysis &amp; Interpretation</p>
+      <p class="tag">인공지능과 인간지능 '사이', 데이터와 의학 '사이'를 잇습니다.
+        <span class="en">Bridging artificial and natural intelligence — and data and medicine.</span>
+      </p>
     </div>
-    <p class="tagline">인공지능과 인간지능 '사이', 데이터와 의학 '사이'를 잇습니다.
-      <span class="en">Bridging artificial and natural intelligence — and data and medicine.</span>
-    </p>
   </section>
 
-  <p class="lead">
-    SAI Lab은 지능이 학습한 <strong>표상(representation)을 해석하는 방법론</strong>을 연구합니다.
-    이 방법론은 특정 모델이 아니라 표상 자체를 대상으로 하기에 인공지능과 인간지능 모두에 적용되며(Core AI),
-    이를 한의·임상 데이터의 실제 문제를 푸는 데 활용합니다(Applied AI). 원광대학교에 있습니다.
-  </p>
-  <p class="enp" style="font-size:13.5px">
-    SAI Lab studies methods to interpret the representations that intelligence learns. Because the methods target
-    representations rather than any specific model, they apply to both artificial and natural intelligence (Core AI),
-    and we use them to solve real problems in clinical and Korean-medicine data (Applied AI). Based at Wonkwang University.
-  </p>
-
-  <div class="pihome">
-    <img class="photo" src="pi.jpg" alt="Sa-Yoon Park">
-    <div>
-      <div class="nm">Sa-Yoon Park · 박사윤</div>
-      <div class="rl">PI · 원광대 한의대 생리학교실 조교수 · 서울대병원 BMI Lab 공동연구책임자</div>
-      <p class="pibio">박사윤은 경희대학교에서 한의학을 전공하고 가천대학교에서 생리학으로 석·박사 학위를 받은 한의사입니다. Medical AI와 계산신경과학을 중심으로, 지능이 학습한 표상을 해석하는 방법론을 개발하고 이를 한의·임상 데이터에 적용하는 연구를 합니다.</p>
-      <p class="pibio en">Sa-Yoon Park studied Korean Medicine at Kyung Hee University and received her M.S. and Ph.D. in Physiology from Gachon University; she is a licensed Korean Medicine Doctor. Her work centers on medical AI and computational neuroscience — developing methods to interpret the representations that intelligence learns, and applying them to clinical and Korean-medicine data.</p>
+  <!-- OVERVIEW -->
+  <section class="band tint">
+    <div class="inner">
+      <p class="seclabel">Overview</p>
+      <div class="center-col">
+        <p class="lead" style="margin-top:0">
+          SAI Lab은 지능이 학습한 <strong>표상(representation)을 해석하는 방법론</strong>을 연구합니다.
+          이 방법론은 특정 모델이 아니라 표상 자체를 대상으로 하기에 인공지능과 인간지능 모두에 적용되며(Core AI),
+          이를 한의·임상 데이터의 실제 문제를 푸는 데 활용합니다(Applied AI). 원광대학교에 있습니다.
+        </p>
+        <p class="enp">
+          SAI Lab studies methods to interpret the representations that intelligence learns. Because the methods target
+          representations rather than any specific model, they apply to both artificial and natural intelligence (Core AI),
+          and we use them to solve real problems in clinical and Korean-medicine data (Applied AI). Based at Wonkwang University.
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <h3 class="sec" style="margin-top:38px">Recent News</h3>
-  <div class="mininews">
-    <p class="item"><b>2026.08</b> · SAI Lab 출범 및 홈페이지 개설.</p>
-    <p class="item"><b>2025.09</b> · 논문 게재: LUNAR — 폐음 분석용 주기성 인식 시계열 프레임워크 (Computers in Biology and Medicine).</p>
-    <p class="item"><b>2025.03</b> · 논문 게재: 전이학습 기반 소아 폐음 호흡 주기 검출 (Biomedical Signal Processing and Control).</p>
-  </div>
-  <a class="morelink" href="news.html">→ News 전체 보기</a>
+  <!-- PRINCIPAL INVESTIGATOR -->
+  <section class="band">
+    <div class="inner">
+      <p class="seclabel">Principal Investigator</p>
+      <div class="pi-center">
+        <div class="pihome" style="margin-top:0">
+          <img class="photo" src="pi.jpg" alt="Sa-Yoon Park">
+          <div>
+            <div class="nm">Sa-Yoon Park · 박사윤</div>
+            <div class="rl">원광대 한의대 생리학교실 조교수 · 서울대병원 BMI Lab 공동연구책임자</div>
+            <p class="pibio">박사윤은 경희대학교에서 한의학을 전공하고 가천대학교에서 생리학으로 석·박사 학위를 받은 한의사입니다. Medical AI와 계산신경과학을 중심으로, 지능이 학습한 표상을 해석하는 방법론을 개발하고 이를 한의·임상 데이터에 적용하는 연구를 합니다.</p>
+            <p class="pibio en">Sa-Yoon Park studied Korean Medicine at Kyung Hee University and received her M.S. and Ph.D. in Physiology from Gachon University; she is a licensed Korean Medicine Doctor. Her work centers on medical AI and computational neuroscience — developing methods to interpret the representations that intelligence learns, and applying them to clinical and Korean-medicine data.</p>
+          </div>
+        </div>
+        <p style="text-align:center;margin-top:14px"><a class="morelink" href="members.html">→ Members 자세히 보기</a></p>
+      </div>
+    </div>
+  </section>
 
-  <p class="foot">SAI Lab · 사이(間) · Sa-Yoon AI · Signal Analysis &amp; Interpretation · Wonkwang University · sayoon8@wku.ac.kr</p>
+  <!-- RECENT NEWS -->
+  <section class="band tint">
+    <div class="inner">
+      <p class="seclabel">Recent News</p>
+      <div class="news-center">
+        <div class="mininews" style="margin-top:0">
+          <p class="item"><b>2026.08</b> · SAI Lab 출범 및 홈페이지 개설.</p>
+          <p class="item"><b>2025.09</b> · 논문 게재: LUNAR — 폐음 분석용 주기성 인식 시계열 프레임워크 (Computers in Biology and Medicine).</p>
+          <p class="item"><b>2025.03</b> · 논문 게재: 전이학습 기반 소아 폐음 호흡 주기 검출 (Biomedical Signal Processing and Control).</p>
+        </div>
+        <a class="morelink" href="news.html">→ News 전체 보기</a>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <footer class="band">
+    <div class="inner" style="padding-top:26px;padding-bottom:40px;text-align:center">
+      <p style="color:#8a938c;font-size:12px;margin:0">SAI Lab · 사이(間) · Sa-Yoon AI · Signal Analysis &amp; Interpretation · Wonkwang University · sayoon8@wku.ac.kr</p>
+    </div>
+  </footer>
+
 </body>
 </html>

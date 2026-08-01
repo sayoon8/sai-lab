@@ -5,82 +5,135 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SAI Lab · Research</title>
 <link rel="icon" href="logo.svg">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Noto+Serif+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:#FFFFFF;color:#1E2823;font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+  a{color:#2A352E;text-decoration:none}
+  a:hover{color:#DB6D6E}
+  ::selection{background:#EB9293;color:#FFFFFF}
+  @media (max-width:1000px){
+    [data-grid="two"],[data-grid="pi"],[data-grid="cv"],[data-grid="hero"]{grid-template-columns:1fr !important;gap:32px !important}
+    [data-grid="four"]{grid-template-columns:1fr 1fr !important}
+    [data-nav]{gap:16px !important;font-size:12px !important}
+  }
+  @media (max-width:600px){
+    [data-grid="four"]{grid-template-columns:1fr !important}
+    [data-nav]{gap:12px !important;font-size:11.5px !important;letter-spacing:.03em !important}
+    [data-navbar]{height:auto !important;min-height:56px;flex-wrap:wrap;row-gap:8px;padding:10px 20px !important}
+    [data-row]{grid-template-columns:1fr !important;gap:4px !important}
+  }
+</style>
 </head>
 <body>
-<div class="wrap">
-
-  <nav class="topnav">
-    <a class="brand" href="index.html">
-      <svg viewBox="0 0 120 120"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"/><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"/><circle cx="60" cy="66" r="12" fill="#EB9293"/></svg>
-      SAI Lab
-    </a>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="members.html">Members</a>
-      <a href="news.html">News</a>
-      <a href="recruiting.html">Recruiting</a>
+<div style="width:100%;min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <div style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #EAEEEC;flex:none">
+    <div data-navbar style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,3.5vw,56px);height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#1E2823">
+        <svg viewBox="0 0 120 120" style="width:28px;height:28px;display:block"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"></rect><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"></rect><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"></rect><circle cx="60" cy="66" r="12" fill="#EB9293"></circle></svg>
+        <span style="font-weight:800;font-size:17px;letter-spacing:.09em">SAI LAB</span>
+      </a>
+      <div data-nav style="display:flex;gap:30px;align-items:center;flex-wrap:wrap;font-size:13px;letter-spacing:.06em;font-weight:500">
+        <a href="index.html" style="position:relative;text-decoration:none;color:#5f6b62;padding:6px 0;font-weight:500">Home</a>
+        <a href="research.html" style="position:relative;text-decoration:none;color:#1E2823;padding:6px 0;font-weight:700">Research<span style="position:absolute;left:0;right:0;bottom:0;height:2px;background:#61CD7F"></span></a>
+        <a href="publications.html" style="position:relative;text-decoration:none;color:#5f6b62;padding:6px 0;font-weight:500">Publications</a>
+        <a href="members.html" style="position:relative;text-decoration:none;color:#5f6b62;padding:6px 0;font-weight:500">Members</a>
+        <a href="news.html" style="position:relative;text-decoration:none;color:#5f6b62;padding:6px 0;font-weight:500">News</a>
+        <a href="join.html" style="text-decoration:none;color:#1E2823;font-weight:700;background:#F5F7F6;border:1px solid #E2E8E4;border-radius:999px;padding:8px 18px">Join us</a>
+      </div>
     </div>
-  </nav>
-
-  <div class="pagetitle">
-    <p class="eyebrow">Research</p>
-    <h2>Research Statement</h2>
   </div>
 
-  <p class="lead">
-    인공신경망과 사람의 뇌는 모두 세계를 내부 표상(learned representation)으로 학습합니다.
-    SAI Lab은 이 학습된 표상을 해석하는 방법론을 개발하고(Core AI), 이를 한의·임상 데이터에 적용해 문제를 풉니다(Applied AI).
-    방법론이 특정 모델이 아니라 표상 자체를 대상으로 하므로, 인공지능과 인간지능 양쪽에 적용됩니다.
-  </p>
-  <p class="enp">
-    Artificial neural networks and the human brain both learn internal representations of the world. SAI Lab develops
-    methods to interpret these learned representations (Core AI) and applies them to clinical and Korean-medicine data
-    to solve real problems (Applied AI). Because the methods target representations rather than any specific model,
-    they apply to both artificial and natural intelligence.
-  </p>
+  <div style="flex:1;width:100%;max-width:1440px;margin:0 auto;padding:56px clamp(20px,3.5vw,56px) 88px">
+    <div style="display:flex;align-items:baseline;gap:14px;border-bottom:2px solid #1E2823;padding-bottom:16px">
+      <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-size:clamp(30px,3.6vw,44px);font-weight:700;letter-spacing:-.01em">Research</h2>
+      <span style="font-size:13.5px;color:#5f6b62">연구 방향</span>
+    </div>
+    <p style="margin:32px 0 0;max-width:900px;font-size:17px;line-height:1.85;color:#26332C;text-wrap:pretty">인공신경망과 사람의 뇌는 모두 세계를 내부 표상(learned representation)으로 학습합니다. SAI Lab은 이 학습된 표상을 해석하는 방법론을 개발하고(Core AI), 이를 한의·임상 데이터에 적용해 문제를 풉니다(Applied AI).</p>
+    <p style="margin:14px 0 0;max-width:900px;font-size:13.5px;line-height:1.72;color:#5f6b62">Artificial neural networks and the human brain both learn internal representations of the world. Because the methods target representations rather than any specific model, they apply to both artificial and natural intelligence.</p>
 
-  <div class="tier core" style="margin-top:24px">
-    <span class="tag">Core AI</span>
-    <h3>학습된 표상의 해석 <span class="en">· Interpretation of Learned Representations</span></h3>
-    <p>딥러닝 모델과 뇌가 학습한 표상이 무엇을 담고 있고 어떻게 구조화되어 있는지 분석하는 방법을 개발합니다. 특정 아키텍처에 의존하지 않고 표상 자체를 다루기 때문에, 인공지능 모델과 신경계 양쪽에 적용할 수 있습니다.</p>
-    <p class="enp">We develop methods to analyze what learned representations — in deep-learning models and in the brain — contain and how they are structured. Because we work on the representations themselves rather than a specific architecture, the methods apply to both artificial models and biological neural systems.</p>
-    <div class="projlabel">연구 주제 · Topics</div>
-    <ul class="projs">
-      <li><b>뉴런 정보 선택성 해석 (DIFF)</b> — 뉴런이 어떤 정보에 주목하는지 데이터 기반으로 규명합니다. <span class="en">DIFF (Data-driven Feature Finding): interpreting what information neurons focus on</span></li>
-      <li><b>신호·노이즈 기하학</b> — 표현 공간의 구조를 신호와 노이즈의 기하로 이해합니다. <span class="en">Signal–noise geometry of representations</span></li>
-    </ul>
+    <div style="display:grid;gap:0;margin-top:44px">
+      <div style="background:#1E2823;color:#FFFFFF;border-radius:20px 20px 4px 4px;padding:44px clamp(24px,3vw,48px)">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+          <span style="background:#61CD7F;color:#12271A;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 13px">Core AI</span>
+          <span style="font-size:12px;color:#7FBF97;letter-spacing:.08em">방법론 · methodology</span>
+        </div>
+        <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-size:clamp(24px,2.4vw,30px);font-weight:600">학습된 표상의 해석</h3>
+        <p style="margin:6px 0 0;font-size:14px;color:#9FB0A4">Interpretation of Learned Representations</p>
+        <p style="margin:20px 0 0;max-width:900px;font-size:15.5px;line-height:1.8;color:#DDE5E0">딥러닝 모델과 뇌가 학습한 표상이 무엇을 담고 있고 어떻게 구조화되어 있는지 분석하는 방법을 개발합니다. 특정 아키텍처에 의존하지 않고 표상 자체를 다루기 때문에, 인공지능 모델과 신경계 양쪽에 적용할 수 있습니다.</p>
+        <p style="margin:14px 0 0;max-width:900px;font-size:13.5px;line-height:1.75;color:#9FB0A4">We develop methods to analyze what learned representations — in deep-learning models and in the brain — contain and how they are structured. Because we work on the representations themselves rather than a specific architecture, the methods apply to both artificial models and biological neural systems.</p>
+        <p style="margin:34px 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7FBF97;font-weight:800">연구 주제 · Topics</p>
+        <div data-grid="four" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div style="background:#26332C;border:1px solid #3C4A42;border-radius:14px;padding:22px 24px">
+            <p style="margin:0 0 10px;font-size:11px;letter-spacing:.1em;color:#EB9293;font-weight:800">01</p>
+            <p style="margin:0;font-size:15.5px;font-weight:700;line-height:1.5">뉴런 정보 선택성 해석</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#BFCEC5;line-height:1.7">뉴런이 어떤 정보에 주목하는지 데이터 기반으로 규명합니다.</p>
+            <p style="margin:8px 0 0;font-size:12.5px;color:#8FA89A">Interpreting what information neurons focus on</p>
+          </div>
+          <div style="background:#26332C;border:1px solid #3C4A42;border-radius:14px;padding:22px 24px">
+            <p style="margin:0 0 10px;font-size:11px;letter-spacing:.1em;color:#EB9293;font-weight:800">02</p>
+            <p style="margin:0;font-size:15.5px;font-weight:700;line-height:1.5">신호 · 노이즈 기하학</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#BFCEC5;line-height:1.7">표현 공간의 구조를 신호와 노이즈의 기하로 이해합니다.</p>
+            <p style="margin:8px 0 0;font-size:12.5px;color:#8FA89A">Signal–noise geometry of representations</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;padding:16px 0">
+        <span style="height:20px;width:1px;background:#CBD8D0"></span>
+        <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#5f6b62;font-weight:700">적용 · applied to</span>
+        <span style="height:20px;width:1px;background:#CBD8D0"></span>
+      </div>
+      <div style="background:#F5F7F6;border:1px solid #EAEEEC;border-radius:4px 4px 20px 20px;padding:44px clamp(24px,3vw,48px)">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+          <span style="background:#EB9293;color:#3A1516;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 13px">Applied AI</span>
+          <span style="font-size:12px;color:#8a938c;letter-spacing:.08em">실제 문제 · real problems</span>
+        </div>
+        <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-size:clamp(24px,2.4vw,30px);font-weight:600">한의 · 임상 데이터사이언스</h3>
+        <p style="margin:6px 0 0;font-size:14px;color:#5f6b62">Clinical &amp; Korean-Medicine Data Science</p>
+        <p style="margin:20px 0 0;max-width:900px;font-size:15.5px;line-height:1.8;color:#26332C">Core AI의 해석 방법론을 한의·임상 데이터에 적용해 실제 문제를 풉니다. 진단의 객관화와 설명, 치료 반응의 이해, 임상 예후 예측으로 이어집니다.</p>
+        <p style="margin:14px 0 0;max-width:900px;font-size:13.5px;line-height:1.75;color:#5f6b62">We apply the interpretation methods from Core AI to clinical and Korean-medicine data — from objectifying diagnosis and discovering patient subtypes to explaining treatment responses and predicting clinical outcomes.</p>
+        <p style="margin:34px 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#2A352E;font-weight:800">연구 분야 · Topics</p>
+        <div data-grid="four" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+          <div style="background:#FFFFFF;border:1px solid #EAEEEC;border-radius:14px;padding:22px 24px">
+            <p style="margin:0 0 10px;font-size:11px;letter-spacing:.1em;color:#DB6D6E;font-weight:800">01</p>
+            <p style="margin:0;font-size:15.5px;font-weight:700;line-height:1.5">한의 진단의 객관화</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#41504a;line-height:1.7">미병(未病)·체질 등 진단 개념을 정량화하고 설명 가능하게 만듭니다.</p>
+            <p style="margin:8px 0 0;font-size:12.5px;color:#8a938c">Data-driven Korean-medicine diagnosis</p>
+          </div>
+          <div style="background:#FFFFFF;border:1px solid #EAEEEC;border-radius:14px;padding:22px 24px">
+            <p style="margin:0 0 10px;font-size:11px;letter-spacing:.1em;color:#DB6D6E;font-weight:800">02</p>
+            <p style="margin:0;font-size:15.5px;font-weight:700;line-height:1.5">침 치료 효능의 규명</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#41504a;line-height:1.7">네트워크 과학과 설명가능 AI로 혈자리 사용 패턴과 진통 효능을 분리하고, 무엇이 효능을 결정하는지 규명합니다.</p>
+            <p style="margin:8px 0 0;font-size:12.5px;color:#8a938c">Decoding acupuncture efficacy with network science &amp; explainable AI</p>
+          </div>
+          <div style="background:#FFFFFF;border:1px solid #EAEEEC;border-radius:14px;padding:22px 24px">
+            <p style="margin:0 0 10px;font-size:11px;letter-spacing:.1em;color:#DB6D6E;font-weight:800">03</p>
+            <p style="margin:0;font-size:15.5px;font-weight:700;line-height:1.5">임상 적용 예측 모델 개발</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#41504a;line-height:1.7">EMR과 생체신호로 질병 예후·진단을 예측합니다.</p>
+            <p style="margin:8px 0 0;font-size:12.5px;color:#8a938c">Clinical prediction from EMR &amp; bio-signals</p>
+          </div>
+          <div style="background:#FFFFFF;border:1px solid #EAEEEC;border-radius:14px;padding:22px 24px">
+            <p style="margin:0 0 10px;font-size:11px;letter-spacing:.1em;color:#DB6D6E;font-weight:800">04</p>
+            <p style="margin:0;font-size:15.5px;font-weight:700;line-height:1.5">통합의학</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#41504a;line-height:1.7">한의학과 서양의학의 진료·데이터를 함께 분석해, 두 의학을 잇는 근거를 만듭니다.</p>
+            <p style="margin:8px 0 0;font-size:12.5px;color:#8a938c">Integrative medicine — bridging Korean and Western medicine with data</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="arrow">↓ 적용 · applied to</div>
-
-  <div class="tier applied">
-    <span class="tag">Applied AI</span>
-    <h3>한의·임상 데이터사이언스 <span class="en">· Clinical &amp; Korean-Medicine Data Science</span></h3>
-    <p>Core AI의 해석 방법론을 한의·임상 데이터에 적용해 실제 문제를 풉니다. 진단의 객관화와 설명, 치료 반응의 이해, 임상 예후 예측으로 이어집니다.</p>
-    <p class="enp">We apply the interpretation methods from Core AI to clinical and Korean-medicine data — from objectifying diagnosis and discovering patient subtypes to explaining treatment responses and predicting clinical outcomes.</p>
-    <div class="projlabel">연구 분야 · Areas</div>
-    <ul class="projs">
-      <li><b>한의 진단의 데이터화</b> — 미병(未病)·체질 등 진단 개념을 정량화하고 설명 가능하게 만듭니다. <span class="en">Data-driven Korean-medicine diagnosis</span></li>
-      <li><b>침 치료 효능의 규명</b> — 네트워크 과학과 설명가능 AI로 혈자리 사용 패턴과 진통 효능을 분리하고, 무엇이 효능을 결정하는지 규명합니다. <span class="en">Decoding acupuncture efficacy with network science &amp; explainable ML</span></li>
-      <li><b>임상 예측 모델</b> — EMR과 생체신호로 질병 예후·진단을 예측합니다. <span class="en">Clinical prediction from EMR &amp; bio-signals</span></li>
-    </ul>
-  </div>
-
-  <h3 class="sec" style="margin-top:38px">About the Name</h3>
-  <div class="card">
-    <p><strong>SAI</strong> 에는 세 겹의 의미가 담겨 있습니다.</p>
-    <p style="margin-top:10px;color:#41504a">
-      ① <strong style="color:#2f9a55">사이 (間)</strong> — 서로 다른 것을 잇는 틈. <strong>인공지능과 인간지능 사이</strong>, <strong>데이터와 의학 사이</strong>를 잇습니다.<br>
-      ② <strong style="color:#2f9a55">Sa-Yoon AI</strong> — 연구실을 이끄는 사람의 이름.<br>
-      ③ <strong style="color:#2f9a55">Signal Analysis &amp; Interpretation</strong> — 신호(데이터·표상)를 분석하고 해석하는 연구 방법론.
-    </p>
-    <p class="en">SAI carries three meanings: 사이 (間, "the in-between that connects"), <em>Sa-Yoon AI</em>, and <em>Signal Analysis &amp; Interpretation</em>.</p>
-  </div>
-
-  <p class="foot">SAI Lab · Wonkwang University · sayoon8@wku.ac.kr</p>
-
+  <footer style="flex:none;border-top:1px solid #EAEEEC;background:#FFFFFF">
+    <div style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,3.5vw,56px);display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:11px">
+        <svg viewBox="0 0 120 120" style="width:22px;height:22px;display:block"><rect x="22" y="20" width="76" height="12" rx="6" fill="#61CD7F"></rect><rect x="24" y="34" width="13" height="64" rx="6.5" fill="#1E2823"></rect><rect x="83" y="34" width="13" height="64" rx="6.5" fill="#1E2823"></rect><circle cx="60" cy="66" r="12" fill="#EB9293"></circle></svg>
+        <span style="font-size:12.5px;color:#5f6b62">SAI Lab · 사이(間) · Signal Analysis &amp; Interpretation</span>
+      </div>
+      <span style="font-size:12.5px;color:#8a938c">원광대학교 한의과대학 생리학교실 · 전북 익산 · sayoon8@wku.ac.kr</span>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
